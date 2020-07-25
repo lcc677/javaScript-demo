@@ -20,6 +20,7 @@
 
 function myclass() {
 }
+console.log(myclass.prototype)
 
 Object.defineProperty(myclass.prototype, "x", {
   get() {

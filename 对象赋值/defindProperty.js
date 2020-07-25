@@ -6,6 +6,7 @@ Object.defineProperty(a, 'key1', {value:"key1",configurable:false,writable:true}
 Object.defineProperty(a, 'key1', { writable: false })
 // a.key1 = "keys22"
 console.log(a.key1)
+console.log(Object.getOwnPropertyDescriptors(a))
 
 // 如果configurable是false,那不能在更改属性的描述
 // Object.defineProperty(a, 'key1', { value: "key122" }) // 报错

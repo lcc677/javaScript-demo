@@ -1,18 +1,15 @@
 const axios = require('axios')
 
-setTimeout(function () {
-  console.log('setTimeout');
-}, 0);
-
+console.log('script start')
 const ax = axios.create({
   baseURL: 'http://127.0.0.1:8000/',
   timeout: 1000,
   headers: { 'X-Custom-Header': 'foobar' }
 });
 ax.request({
-  url:'system/index',
+  url: 'system/index',
   method: 'get'
-}).then(response =>{
+}).then(response => {
   console.log(response.data)
 })
 Promise.resolve().then(function () {

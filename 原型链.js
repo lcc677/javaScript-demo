@@ -18,6 +18,8 @@ class Person{
   }
 }
 let person = new Person()
+console.log(person.hasOwnProperty('name'));
 console.log(person.hasOwnProperty('add'))
-
+console.log(Person.prototype)
+person.add()
 console.log(Person.prototype.add)

@@ -92,3 +92,4 @@ someAsyncApiCall(() => {
 });
 
 bar = 1;
+
